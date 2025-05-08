@@ -1,0 +1,78 @@
+/* Compensa a altura da navbar fixa */
+body {
+    padding-top: 56px;
+    background-color: #ffffff;
+  }
+  
+  /* Navbar laranja */
+  .custom-navbar {
+    background-color: #ff8210 !important;
+  }
+  
+  /* Estilo dos links da navbar */
+  .custom-navbar .nav-link,
+  .custom-navbar .navbar-brand,
+  .custom-navbar .dropdown-toggle {
+    color: white !important;
+  }
+  
+  /* Ícone do menu mobile */
+  .custom-navbar .navbar-toggler {
+    border-color: white;
+  }
+  
+  /* Estilo do input */
+  .custom-navbar .form-control {
+    border: 2px solid #fca651 !important;
+    background-color: white !important;
+    color: black;
+  }
+  
+  /* Estilo do botão de busca */
+  .custom-navbar .btn {
+    background-color: #fca651 !important;
+    color: white !important;
+    border: none !important;
+  }
+  
+  .custom-navbar .btn:hover {
+    background-color: #ff8210 !important;
+    color: white !important;
+  }
+  
+  /* Ajuste da imagem do carrossel */
+  .carousel-inner img {
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  /* Carrossel mais estreito e centralizado */
+  #carouselExampleCaptions {
+    max-width: 720px;
+    margin: 2rem auto;
+    padding: 0 15px;
+  }
+  
+  /* Responsividade para telas menores */
+  @media (max-width: 768px) {
+    .carousel-inner img {
+      height: 250px;
+    }
+  
+    #carouselExampleCaptions {
+      max-width: 100%;
+      padding: 0 10px;
+    }
+  }
+  
+  /* Estilo dos textos dentro do carrossel */
+  .carousel-caption h5,
+  .carousel-caption p {
+    background-color: rgba(0, 0, 0, 0.4);
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    color: #fff;
+  }
+  
