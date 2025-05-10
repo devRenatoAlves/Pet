@@ -1,6 +1,6 @@
 /* Compensa corretamente a altura da navbar fixa */
 body {
-  padding-top: 80px; /* aumente conforme a altura real da navbar */
+  padding-top: 50px; /* aumente conforme a altura real da navbar */
   background-color: #ff8210;
 }
 
