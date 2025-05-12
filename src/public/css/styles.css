@@ -1,0 +1,76 @@
+/* Compensa corretamente a altura da navbar fixa */
+body {
+  padding-top: 50px; /* aumente conforme a altura real da navbar */
+  background-color: #ff8210;
+}
+
+/* Deixa a navbar branca */
+.custom-navbar {
+  background-color: white !important;
+}
+
+/* Links e textos da navbar com cor laranja */
+.custom-navbar .nav-link,
+.custom-navbar .navbar-brand,
+.custom-navbar .dropdown-toggle {
+  color: #ff8210 !important;
+}
+
+/* Botões, bordas e input ainda seguem o estilo laranja */
+.custom-navbar .navbar-toggler {
+  border-color: #ff8210;
+}
+
+.custom-navbar .form-control {
+  border: 2px solid #fca651 !important;
+  background-color: white !important;
+  color: black;
+}
+
+.custom-navbar .btn {
+  background-color: #fca651 !important;
+  color: white !important;
+  border: none !important;
+}
+
+.custom-navbar .btn:hover {
+  background-color: #ff8210 !important;
+  color: white !important;
+}
+
+/* Carrossel ocupa 100% da largura */
+#carouselExampleCaptions {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.carousel-inner {
+  padding-top: 50px;
+}
+
+/* Imagem do carrossel ocupa toda a largura */
+.carousel-inner img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .carousel-inner img {
+    height: 250px;
+  }
+}
+
+/* Textos do carrossel */
+.carousel-caption h5,
+.carousel-caption p {
+  background-color: rgba(0, 0, 0, 0.4);
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  color: #fff;
+}
