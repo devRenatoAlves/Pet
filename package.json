@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/app.ts",
-    "build": "npm install"
+    "dev": "ts-node-dev src/app.ts",
+    "start": "node dist/app.js",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,8 @@
   },
   "devDependencies": {
     "@types/node": "^22.15.17",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
     "typescript": "^5.8.3"
   }
 }
