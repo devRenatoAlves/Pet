@@ -1,15 +1,19 @@
-import fastify from 'fastify';
+import fastify, { FastifyRequest, FastifyReply } from 'fastify';
 
-const server = fastify()
+const app = fastify();
 
-server.get('/ping', async (request, reply) => {
-  return 'pong\n'
-})
+app.get('/', async (_request: FastifyRequest, _reply: FastifyReply) => {
+  return { message: 'Olá, Fastify!' };
+});
 
-server.listen({ port: 8080 }, (err, address) => {
-  if (err) {
-    console.error(err)
-    process.exit(1)
+const start = async () => {
+  try {
+    await app.listen({ port: 3000 });
+    console.log('Servidor rodando em http://localhost:3000');
+  } catch (err) {
+    app.log.error(err);
+    process.exit(1);
   }
-  console.log(`Server listening at ${address}`)
-})
+};
+
+start();
