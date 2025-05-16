@@ -1,4 +1,4 @@
-import fastify, { FastifyRequest, FastifyReply } from 'fastify';
+/* import fastify, { FastifyRequest, FastifyReply } from 'fastify';
 
 const app = fastify();
 
@@ -17,3 +17,6 @@ const start = async () => {
 };
 
 start();
+ */
+
+console.log('Hello, Fastify!');
